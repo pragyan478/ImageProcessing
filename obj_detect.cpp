@@ -17,7 +17,7 @@ int main(int argc, char** argv)
 	vector<vector<Point> > cont;
 	vector<Point> sides;
 	String shape;
-	src = imread("/home/madhur/Downloads/shapes.jpg");
+	src = imread("/home/madhur/cpp_test/shapes.jpg");
 	cvtColor(src, hsv, COLOR_BGR2HSV);
 	inRange(hsv, Scalar(0, 0, 50), Scalar(180, 255, 255), thresh);
 	findContours(thresh, cont, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_SIMPLE);
